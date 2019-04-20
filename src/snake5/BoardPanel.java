@@ -90,31 +90,16 @@ public class BoardPanel extends JPanel {
 		}
 	}
 	
-	/**
-	 * Sets the tile at the desired coordinate.
-	 * @param point The coordinate of the tile.
-	 * @param type The type to set the tile to.
-	 */
-	public void setTile(Point point, TileType type) {
+lic void setTile(Point point, TileType type) {
 		setTile(point.x, point.y, type);
 	}
 	
-	/**
-	 * Sets the tile at the desired coordinate.
-	 * @param x The x coordinate of the tile.
-	 * @param y The y coordinate of the tile.
-	 * @param type The type to set the tile to.
-	 */
+
 	public void setTile(int x, int y, TileType type) {
 		tiles[y * ROW_COUNT + x] = type;
 	}
 	
-	/**
-	 * Gets the tile at the desired coordinate.
-	 * @param x The x coordinate of the tile.
-	 * @param y The y coordinate of the tile.
-	 * @return
-	 */
+
 	public TileType getTile(int x, int y) {
 		return tiles[y * ROW_COUNT + x];
 	}
